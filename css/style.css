@@ -44,7 +44,7 @@ img {
     background: url('../img/netflix-background.jpg') no-repeat center center/cover;
 }
 
-.showcase:after {
+.showcase:after /*for overlay*/{
     content: ''; /*I don't want to insert any content so just put empty quotes here*/
     /*the idea is that we want to position this inside our showcase, which is positioned relative*/
     position: absolute;
@@ -53,12 +53,14 @@ img {
     width: 100%; /*we want it to span the whole thing */
     height: 100%; /*we want it to span the whole thing */
     z-index: 1;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.6);
+    box-shadow: inset 50px 80px 140px #000000, inset -50px -80px 140px #000000; /* shadows around screen, remove this to see the difference*/
 }
 
 .showcase-top {
     position: relative;
     height: 90px;
+    z-index: 2; /*now higher than overlay*/
 }
 
 .showcase-top img {
@@ -78,6 +80,7 @@ img {
 
 .showcase-content {
     position: relative;
+    z-index: 2; /*higher than overlay*/
     margin: auto;
     display: flex;
     flex-direction: column;
