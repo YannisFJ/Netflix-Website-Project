@@ -77,8 +77,22 @@ img {
     cursor: pointer; /* pointer will look better for buttons */
     margin-right: 0.5rem; /* just incase we put buttons inline next to each other */
     outline: none; /* no button outline */
-    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
-    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45); 
+    border-radius: 2px; /* bit of roundess to button */
 }
 
-.btn:hover 
+.btn:hover {
+    opacity: 0.9; /*will give the effect of changing colour when hovered */
+}
+
+.btn-rounded {
+    border-radius: 5px; /*more rounded*/
+}
+
+.btn-xl {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 2.1rem; /* top/bottom left/right */
+}
+
+.btn-lg
