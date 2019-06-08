@@ -44,6 +44,14 @@ img {
     background: url('../img/netflix-background.jpg') no-repeat center center/cover;
 }
 
+.showcase:after {
+    content: ''; /*I don't want to insert any content so just put empty quotes here*/
+    /*the idea is that we want to position this inside our showcase, which is positioned relative*/
+    position: absolute;
+    top: 0; /*span from the top*/
+    left: 0; /*span from the top left*/
+}
+
 .showcase-top {
     position: relative;
     height: 90px;
