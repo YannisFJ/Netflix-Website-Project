@@ -181,11 +181,26 @@ img {
 .table {
     width: 100%;
     margin-top: 2rem;
+    border-spacing: 0; /* cleans up table*/
 }
 
 .table thead tr th {
     text-transform: uppercase;
     padding: 0.8rem;
+}
+
+.table tbody tr td {
+    color: #999;
+    padding: 0.8rem 1.2rem;
+}
+
+.table tbody tr td:first-child /*selecting the first child element, in this case the descriptive td's in tbody*/ {
+    text-align: left;
+}
+
+/* the nth child pseudo selector allows us to do even/odd selecting*/
+.table tbody tr:nth-child(odd) {
+    background-color: #222;
 }
 
 /*Container */
