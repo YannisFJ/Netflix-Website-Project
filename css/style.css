@@ -139,7 +139,7 @@ img {
 }
 
 .tab-border {
-    border-bottom: var(--primary-color) 4px solid;
+    border-bottom: var(--primary-color) 4px solid; /*makes border bottom of tab section the primary color*/
 }
 
 /*Container */
