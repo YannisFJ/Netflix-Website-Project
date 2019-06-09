@@ -129,7 +129,18 @@ img {
     padding-top: 0.5rem;
 }
 
+.tabs .container > div /*direct divs inside container get padding on top/bottom */{
+    padding: 1.5rem 0;
+}
 
+.tabs .container > div:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.tab-border {
+    border-bottom: var(--primary-color) 4px solid;
+}
 
 /*Container */
 
