@@ -188,6 +188,10 @@ img {
     text-align: center;
 }
 
+#tab-2-content .text-lg {
+    padding-left: 0.5rem;
+}
+
 /* table */
 
 .table {
