@@ -357,6 +357,26 @@ img {
     .text-md {
         font-size: 1rem;
     }
+}
+
+@media(max-width: 700px) {
     
+    .showcase::after {
+		background: rgba(0, 0, 0, 0.3);
+		box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
+	} /* lighten it for mobile devices*/
     
+    #tab-1-content .tab-1-content-inner {
+        grid-template-columns: 1fr; /* will stack everything*/
+        text-align: center;
+    }
+    
+    #tab-2-content .tab-2-content-top {
+		display: block; /* displaying block instead of grid now*/
+		text-align: center; /* centering it*/
+	}
+
+	#tab-2-content .tab-2-content-bottom {
+		grid-template-columns: 1fr;
+	}
 }
