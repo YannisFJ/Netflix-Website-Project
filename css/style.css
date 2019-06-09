@@ -115,6 +115,31 @@ img {
     border-bottom: 3px solid #3d3d3d; /* border for the whole section*/
 }
 
+.tabs .container /*I want the 3 tab items to be the grid items. Therefore, we select their parent "container" class as the grid*/ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*we want 3 equal rows*/ /* could have alternativley used 1fr 1fr 1fr */
+    grid-gap: 1rem; /*gap between grid items*/
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+
+
+/*Container */
+
+.container {
+    max-width: 70%; /* container itself takes 70% of the screen width */
+    margin:auto; /* we want everything in the middle*/
+    overflow: hidden; /*want everything to stay in container*/
+    padding:0 2rem ;
+}
+
 
 /*buttons*/
 
