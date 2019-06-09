@@ -157,6 +157,10 @@ img {
     display: none;
 }
 
+.show {
+    display: block !important; /*get the show class on to the correct content*/
+}
+
 #tab-1-content .tab-1-content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -221,7 +225,7 @@ img {
 
 .footer, 
 .footer a {
-    color: #999;
+    color: #504f4f;
     font-size: 0.9rem;
 }
 
@@ -308,6 +312,10 @@ img {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 0.8rem 1.3rem; 
+}
+
+.btn-icon {
+	margin-left: 1rem;
 }
 
 /*** queries **/
