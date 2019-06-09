@@ -160,6 +160,7 @@ img {
 
 #tab-2-content .tab-2-content-top {
     display: grid;
+    margin-top: 1rem;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
     justify-content: center;
@@ -258,7 +259,7 @@ img {
 }
 
 .text-center {
-    align: center;
+    text-align: center;
 }
 
 .text-dark {
